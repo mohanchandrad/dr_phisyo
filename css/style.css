@@ -53,6 +53,7 @@ input::-webkit-inner-spin-button {
     top: 0;
     left: 0;
     background-color: var(--nav-bg-color);
+    transition: all 0.6s;
 }
 
 /* font-family: 'Poppins', sans-serif; */
@@ -134,7 +135,6 @@ header>nav>.nav-link>ul>li>a:hover:after {
     width: 100%;
     height: 90vh;
     margin: 0px auto;
-    background-color: aquamarine;
     background-image: url('../images/benar.png');
     background-position: top center;
     background-size: cover;
@@ -264,9 +264,18 @@ header>nav>.nav-link>ul>li>a:hover:after {
     background-color: #ffff;
 }
 
+#service>.ser-row>.ser-col>.service_image {
+    overflow: hidden;
+}
+
 #service>.ser-row>.ser-col>.service_image>img {
     width: 100%;
     position: relative;
+    transition: 350ms ease-in-out;
+}
+
+#service>.ser-row>.ser-col>.service_image>img:hover {
+transform: scale(1.3);
 }
 
 #service>.ser-row>.ser-col>.ser_title h3 {
@@ -304,6 +313,10 @@ header>nav>.nav-link>ul>li>a:hover:after {
 #special>.slider {
     width: 80%;
     margin: 50px auto;
+}
+
+#special .slider  .item  img {
+    cursor: pointer;
 }
 
 #special>.slider>.item>img {
@@ -456,10 +469,15 @@ footer>.fot-row>.fot-col>.f-link ul {
 
 footer>.fot-row>.fot-col>.f-link ul>li>a {
     text-decoration: none;
-    line-height: 3;
+    line-height: 2.5;
     color: var(--foot-link-color);
     font-weight: 300;
     font-size: 14px;
+    transition: all 0.4s;
+}
+
+footer>.fot-row>.fot-col>.f-link ul>li>a:hover {
+   color: #13A89E;
 }
 
 footer>.fot-row>.fot-col>.social_link ul {
@@ -477,8 +495,16 @@ footer>.fot-row>.fot-col>.social_link ul>li>a {
     justify-content: center;
     background-color: var(--active-link);
     border-radius: 50%;
+    border: 1px solid #13A89E;
     color: #fff;
     text-decoration: none;
+    transition: 150ms linear;
+}
+
+footer>.fot-row>.fot-col>.social_link ul>li>a:hover {
+    color: #13A89E;
+    background-color: transparent;
+    border: 1px solid #13A89E;
 }
 
 /* footer>.fot-row>.fot-col>.social_link ul>li>a>a {
@@ -1002,7 +1028,7 @@ footer>.copy-right>.left-side a {
 .red-banner {
     width: 100%;
     min-height: 75vh;
-    background-image: url(../image/read-p-2-banar.png);
+    background-image: url(../images/read-p-2-banar.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -1041,7 +1067,7 @@ footer>.copy-right>.left-side a {
 .red-p3-benar {
     width: 100%;
     min-height: 70vh;
-    background-image: url(../image/red-benar-5.png);
+    background-image: url(../images/red-benar-5.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;

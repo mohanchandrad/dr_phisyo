@@ -18,7 +18,7 @@ const toggleMenu = () => {
 window.addEventListener('scroll', function() {
     const hed = this.document.getElementById('stick',)
    
-if(window.scrollY > 200) {
+if(window.scrollY > 0) {
     hed.classList.add('stikey')
 }else{
     hed.classList.remove('stikey')
