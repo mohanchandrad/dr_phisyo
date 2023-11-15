@@ -261,11 +261,18 @@ header>nav>.nav-link>ul>li>a:hover:after {
 
 #service>.ser-row>.ser-col {
     width: 30%;
+    min-height: 500px;
     background-color: #ffff;
+    position: relative;
 }
 
 #service>.ser-row>.ser-col>.service_image {
     overflow: hidden;
+}
+
+#service>.ser-row>.ser-col>.ser-img {
+    position: absolute;
+    bottom: 0;
 }
 
 #service>.ser-row>.ser-col>.service_image>img {
@@ -557,7 +564,7 @@ footer>.copy-right>.left-side a {
     background-position: top;
 }
 
-#about>.abo-row {
+#about .abo-row {
     width: 90%;
     height: 100%;
     margin: 0px auto;
@@ -566,11 +573,11 @@ footer>.copy-right>.left-side a {
     align-items: center;
 }
 
-#about>.abo-row>.abo-col {
+#about .abo-row .abo-col {
     width: 50%;
 }
 
-#about>.abo-row>.abo-col>.ad-title>h2 {
+#about .abo-row .abo-col .ad-title h2 {
     font-family: 'Inter', sans-serif;
     font-size: 31px;
     margin-bottom: 10px;
@@ -578,7 +585,7 @@ footer>.copy-right>.left-side a {
     text-transform: capitalize;
 }
 
-#about>.abo-row>.abo-col>.ab-dis>p {
+#about .abo-row .abo-col .ab-dis p {
     font-family: 'Inter', sans-serif;
     font-size: 15px;
     line-height: 1.5;
@@ -587,7 +594,7 @@ footer>.copy-right>.left-side a {
     font-weight: 100;
 }
 
-#about>.abo-row>.abo-col>img {
+#about .abo-row .abo-col img {
     width: 63%;
     margin-left: 38px;
 }
@@ -881,7 +888,7 @@ footer>.copy-right>.left-side a {
 
 .red_rows_1>.red-cols_1>img {
     width: 100%;
-    height: 80%;
+    height: 95%;
 }
 
 
@@ -1059,6 +1066,7 @@ footer>.copy-right>.left-side a {
     color: #353535;
     margin-bottom: 10px;
     font-family: 'Inter', sans-serif;
+    font-size: 23px;
 }
 
 /* ------------------------------read3----------------------------- */
@@ -1116,6 +1124,7 @@ footer>.copy-right>.left-side a {
 
 .red_pg_4 {
     background-color: #C1FCF5;
+    padding: 35px 0px;
     border: none !important;
 }
 
@@ -1163,13 +1172,14 @@ footer>.copy-right>.left-side a {
 
 .d-grid {
     display: grid;
-    grid-template-columns: 50% 46%;
+    grid-template-columns: 46% 50%;
+    align-items: center;
     justify-content: space-between;
 }
 
 .d-grid-left {
     display: grid;
-    grid-template-columns: 42% 55% !important;
+    grid-template-columns: 50% 46% !important;
     justify-content: space-between;
     align-items: center;
 }
@@ -1218,4 +1228,23 @@ footer>.copy-right>.left-side a {
     grid-template-columns: 44% 55%;
     margin: 49px auto 60px;
     gap: 37px;
+}
+
+.red-9 .red-title h2 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 35px;
+    font-family: 'Inter', sans-serif;
+    color: var(--section-title-color);
+}
+
+.red-9 .red-dis p {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: var(--section-title-color);
+    width: 75%;
+    text-align: center;
+    margin: 20px auto 0px;
+    line-height: 1.6;
 }
